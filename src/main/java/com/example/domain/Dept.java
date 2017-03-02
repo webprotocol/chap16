@@ -1,5 +1,7 @@
 package com.example.domain;
 
+import java.util.List;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -11,6 +13,16 @@ public class Dept {
 	private int deptno;
 	private String dname;
 	private String loc;
+	
+	private List<Emp> emps;
+	
+	public List<Emp> getEmps() {
+		return emps;
+	}
+
+	public void setEmps(List<Emp> emps) {
+		this.emps = emps;
+	}
 
 	public Dept() {
 		// TODO Auto-generated constructor stub

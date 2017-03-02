@@ -34,7 +34,10 @@ public class CountryMapperTests {
 	}
 	
 	@Test
-	public void test02_selectByDeptno() {
+	public void test02_selectByCode() {
+		Country country = mapper.selectByCode("USA");
+		
+		System.out.println("country=" + country);
 		
 	}
 	

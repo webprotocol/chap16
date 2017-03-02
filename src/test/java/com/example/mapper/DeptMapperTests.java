@@ -31,6 +31,15 @@ public class DeptMapperTests {
 	}
 	
 	@Test
+	public void test01_selectAllWithEmp() {
+		List<Dept> list = mapper.selectAllWithEmp();
+		
+		for (Dept dept : list)
+			System.out.println(dept);
+	}
+	
+	
+	@Test
 	public void test02_selectByDeptno() {
 		
 	}

@@ -17,8 +17,10 @@ public interface CountryMapper {
 	@Select("select * from country")
 	List<Country> selectAll();
 	
-//	@Select("select * from emp where empno=#{empno}")
-//	Emp selectByEmpno(int empno);
+	@Select("select * from country where code=#{code}")
+	Country selectByCode(String code);
+	
+	
 //
 //	@Insert("insert into emp values (#{Empno}, #{dname}, #{loc}")
 //	int insert(Emp emp);

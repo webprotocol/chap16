@@ -77,6 +77,31 @@ create table country_language (
 select * from city;
 select * from country_language;
 
+-- private int empno;
+-- 	private String ename;
+-- 	private String job;
+-- 	private BigDecimal mgr;
+-- 	private Date hiredate;
+-- 	private double sal;
+-- 	private double comm;
+-- 	private BigDecimal deptno;
+select	d.deptno 	as dept_deptno,
+		d.dname 	as dept_dname,
+		d.loc		as dept_loc,
+		e.empno		as emp_empno,
+		e.ename		as emp_ename,
+		e.job		as emp_job,
+		e.mgr		as emp_mgr,
+		e.hiredate	as emp_hiredate,
+		e.sal		as emp_sal,
+		e.comm		as emp_comm,
+		e.deptno	as emp_deptno
+  from dept d left outer join emp e
+    on d.deptno = e.deptno;
+
+
+
+
 
 
 

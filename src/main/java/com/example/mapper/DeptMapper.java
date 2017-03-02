@@ -16,6 +16,8 @@ public interface DeptMapper {
 	@Select("select * from dept")
 	List<Dept> selectAll();
 	
+	List<Dept> selectAllWithEmp();
+	
 	@Select("select * from dept where deptno=#{deptno}")
 	Dept selectByDeptno(int deptno);
 
