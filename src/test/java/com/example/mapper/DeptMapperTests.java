@@ -38,6 +38,14 @@ public class DeptMapperTests {
 			System.out.println(dept);
 	}
 	
+	@Test
+	public void test01_selectAllWithEmp2() {
+		List<Dept> list = mapper.selectAllWithEmp2(20, 30);
+		
+		for (Dept dept : list)
+			System.out.println(dept);
+	}
+	
 	
 	@Test
 	public void test02_selectByDeptno() {

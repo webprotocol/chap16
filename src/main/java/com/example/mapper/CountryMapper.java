@@ -17,6 +17,8 @@ public interface CountryMapper {
 	@Select("select * from country")
 	List<Country> selectAll();
 	
+	List<Country> selectAllWithCity();
+	
 	@Select("select * from country where code=#{code}")
 	Country selectByCode(String code);
 	

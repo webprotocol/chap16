@@ -34,6 +34,14 @@ public class CountryMapperTests {
 	}
 	
 	@Test
+	public void test01_selectAllWithCity() {
+		List<Country> list = mapper.selectAllWithCity();
+		
+		for (Country country : list)
+			System.out.println(country);
+	}
+	
+	@Test
 	public void test02_selectByCode() {
 		Country country = mapper.selectByCode("USA");
 		

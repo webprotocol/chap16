@@ -34,5 +34,12 @@
 	    on d.deptno = e.deptno
 </select>
 
+<select id="selectAllWithEmp2" resultType="com.example.domain.Dept">
+	select *
+	  from dept
+	 where deptno = #{page}
+	    or deptno = #{page2} 
+</select>
+
 
 </mapper>
